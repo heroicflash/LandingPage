@@ -38,8 +38,7 @@ a{
     
 }
 
-.banner-R {
-    /* Vector */
+
 
 margin: 0 auto;
 width: 560.38px;
@@ -56,7 +55,21 @@ flex-grow: 0;
 
 .flex-container-banner {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    border: 1px solid black;
+}
+
+.banner-L{
+    display: flex;
+    align-content: left;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.banner-R{
+    display: flex;
+    align-content: right;
+    justify-content: right;
+    flex-wrap: wrap;
 }
 
