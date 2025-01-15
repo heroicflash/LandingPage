@@ -35,41 +35,64 @@ a{
     color: gray;
     font-size: 20px;
     margin-left: 50px;
+    padding: 12px;
+    border-radius: 5px;
+    border: solid gray 1px;
+    background-color: rgba(255,255,255,0.0);
     
 }
 
 
 
-margin: 0 auto;
-width: 560.38px;
-height: 459.74px;
-
-background: #B9FF66;
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-}
-
 .flex-container-banner {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    border: 1px solid black;
+    padding-top: 35PX;
+    width: 100%;
 }
 
 .banner-L{
     display: flex;
-    align-content: left;
-    justify-content: left;
+    align-content: flex-start;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    width: 55%;
+    font-size: 1.5em;
+    
+}
+
+.banner-L h1 {
+    font-size: 2.5em;
 }
 
 .banner-R{
     display: flex;
-    align-content: right;
-    justify-content: right;
+    align-content: flex-end;
+    justify-content: flex-end;
     flex-wrap: wrap;
+    width: 50%;
+    font-size: 1.2em;
 }
 
+.banner-R img {
+    width: 75%;
+    padding-right: 75PX;
+}
+
+.banner-L button {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 2.5px;
+}
+
+.flex-logo{
+    display: flex;
+    width: 85px;
+    height: 20px;
+    gap: 170px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}

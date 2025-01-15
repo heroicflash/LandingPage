@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /* Align divs to opposite sides */
+            gap: auto; 
+        }
+        .right{
+            display: flex;
+            background-color: red;
+            border: 5px solid black;
+            height: 100px;
+            width: 100px;
+            align-items: right;
+            justify-content: right;
+            align-content: right;
+            padding-left: 50px;
+        }
+
+        .left{
+            display: flex;
+            background-color: rgb(110, 39, 176);
+            border: 5px solid black;
+            height: 100px;
+            width: 100px;
+            align-items: left;
+            justify-content: left;
+            align-content: left;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="right">Hello</div>
+    <div class="left">World!</div>
+</body>
+</html>
